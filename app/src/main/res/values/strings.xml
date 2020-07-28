@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TwoPaneFragment</string>
+    <string name="background_1">Background 1</string>
+    <string name="background_2">Background 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="background_3">Background 3</string>
+    <string name="background_4">Background 4</string>
+    <string name="background_5">Background 5</string>
+    <string name="background_6">Background 6</string>
+    <string name="background_7">Background 7</string>
+    <string name="background_8">Background 8</string>
+    <string name="background_9">Background 9</string>
+</resources>
