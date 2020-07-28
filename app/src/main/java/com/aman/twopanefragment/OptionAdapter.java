@@ -16,6 +16,7 @@ public class OptionAdapter extends RecyclerView.Adapter<OptionAdapter.ViewHolder
     private List<OptionalList> listItems;
     private Context context;
 
+
     public OptionAdapter(List<OptionalList> listItems,Context context) {
         this.listItems = listItems;
         this.context=context;
@@ -25,6 +26,7 @@ public class OptionAdapter extends RecyclerView.Adapter<OptionAdapter.ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item,parent,false);
+
         return  new ViewHolder(view);
     }
 
