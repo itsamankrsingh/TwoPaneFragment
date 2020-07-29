@@ -8,7 +8,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:padding="16dp"
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -20,9 +20,9 @@
                 android:background="#A7FFEB"
                 android:fontFamily="@font/croissant_one"
                 android:gravity="center"
-                android:padding="16dp"
+                android:padding="8dp"
                 android:textColor="#000000"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

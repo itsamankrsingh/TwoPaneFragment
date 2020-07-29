@@ -9,12 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class OptionFragment extends Fragment {
+public class OptionFragment extends Fragment implements OptionAdapter.OnOptionListener {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -39,10 +40,15 @@ public class OptionFragment extends Fragment {
         }
 
 
-        adapter=new OptionAdapter(lists,container.getContext());
+        adapter=new OptionAdapter(lists,container.getContext(), this);
 
         recyclerView.setAdapter(adapter);
 
         return view;
+    }
+
+    @Override
+    public void OnOptionClick(int position) {
+        Toast.makeText(getContext(), "Clicked " + (position + 1), Toast.LENGTH_SHORT).show();
     }
 }
